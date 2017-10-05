@@ -18,3 +18,6 @@
 
 # Ignore lock files
 Gemfile.lock
+
+# Ignore secrets
+config/secrets.yml
