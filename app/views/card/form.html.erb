@@ -2,7 +2,6 @@
   <meta charset="utf-8">
   <title>けものトランプジェネレータ</title>
   <meta name="description" content="けものフレンズのアイコンでトランプを生成">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -35,16 +34,10 @@
         <option value="13">K</option>
       </select>
       <br /> フレンズ：
-      <select id="select_friends"></select>ちゃん
+      <select id="select_friends"><%= raw friendsOption %></select>ちゃん
       <br />
       <input id="submit_button" type="button" value="たのしー！">
     </form>
-  </div>
-
-  <div id="show_error">
-    <span>パラメータが不正です！</span>
-    <br />
-    <input id="reset_button" type="button" value="もどる！">
   </div>
 
 </body>

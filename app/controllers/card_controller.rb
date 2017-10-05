@@ -1,16 +1,12 @@
 class CardController < ApplicationController
   
-  #def form
-    
-  #end
-  
   def show
-    if true
-      maker = CardMaker.new
-      card = maker.make(params[:card], params[:friends])
-      render :text => card
-    else
+    maker = CardMaker.new
+    card = maker.make(params[:card], params[:friends])
+    if card == false then
       render action: 'paramError'
+    else
+      send_data(card.to_blob{self.format = "png"}, :type => 'image/png', :disposition => 'inline')
     end
   end
 

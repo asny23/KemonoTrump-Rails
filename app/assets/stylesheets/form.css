@@ -1,16 +1,11 @@
-div#select_form,
-div#show_error {
-  display: none;
-  text-align: center;
-  padding: 16px;
-}
-
 select {
   border-radius: 4px;
   padding: 4px;
+  vertical-align: middle;
 }
 
 input[type="button"] {
-  padding: 4px 12px;
   border-radius: 4px;
+  margin: 4px;
+  padding: 4px 12px;
 }

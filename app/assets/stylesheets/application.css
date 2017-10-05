@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+div#select_form,
+div#show_error {
+  text-align: center;
+  padding: 16px;
+}
